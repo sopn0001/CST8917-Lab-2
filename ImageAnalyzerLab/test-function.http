@@ -1,0 +1,21 @@
+### Smart Image Analyzer - Lab 2 Test Requests
+### These tests are for the HTTP results endpoint.
+### Image uploads must be done via Azure Storage Explorer or curl (see README).
+
+@baseUrl = http://localhost:7071
+
+### Test 1: Get all analysis results (default limit: 10)
+GET http://localhost:7071/api/results
+
+### Test 2: Get all results with custom limit
+GET http://localhost:7071/api/results?limit=5
+
+### Test 3: Get a specific result by ID
+### After running Test 1, copy an "id" from the response and paste it below
+GET http://localhost:7071/api/results/4e26c5a1-7a20-4176-8d5c-03e5dfaaddda
+
+### Test 4: Get results with limit of 1 (most recent only)
+GET http://localhost:7071/api/results?limit=1
+
+### Test 5: Try to get a non-existent result (should return 404)
+GET http://localhost:7071/api/results/does-not-exist-id
