@@ -1,6 +1,24 @@
-# Smart Image Analyzer (Lab 2)
+## CST8917 - Serverless Applications | Summer 2026
+
+# Lab 2: Smart Image Analyzer 
 
 Azure Durable Functions app that analyzes uploaded images using the **Fan-Out/Fan-In** pattern. When an image is uploaded to Blob Storage, four analyses run in parallel, results are combined into a report, and stored in Azure Table Storage.
+
+
+**Student Name**: IDRIS JOVIAL SOP NWABO
+
+**Student ID**: 041199877
+
+**Semester**: Summer 2026
+
+---
+
+## Demo Video
+
+🎥 [Watch Demo Video](https://www.youtube.com/watch?v=3iMvC1Jw7lM)
+
+---
+
 
 ## Prerequisites
 
@@ -94,10 +112,21 @@ Azure Durable Functions app that analyzes uploaded images using the **Fan-Out/Fa
 4. Deploy: Command Palette → `Azure Functions: Deploy to Function App`.
 5. Upload an image to the `images` container, then visit `https://<your-app>.azurewebsites.net/api/results`.
 
-## Demo Video
-
-_Add your YouTube link here before submission._
 
 ## Author
 
 CST8917 — Serverless Applications, Lab 2
+
+## Technical Explanations
+
+
+---
+
+## Challenges and Learnings (Optional)
+
+
+---
+
+## Acknowledgments
+
+[Optional: Credit any resources, documentation, or people who helped you]
